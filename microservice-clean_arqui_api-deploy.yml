@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+	name: microservice-clean_arqui_api-deploy
+	labels:
+		name: microservice-clean_arqui_api-deploy
+		app: microservice
+spec:
+	replicas: 2
+	selector:
+		matchLabels:
+			app: microservice-clean_arqui_api,
+			type: microservice
+	template:
+		metadata:
+			name: microservice-clean_arqui_api-pod
+			labels:
+				app: microservice-clean_arqui_api
+				type: microservice
+		spec:
+			containers:
+				- name: microservice-clean_arqui_api-app
+				  image: danyfloresgarcia18/cleanarquiapi:latest
+				  ports:
+					- containerPort: 80

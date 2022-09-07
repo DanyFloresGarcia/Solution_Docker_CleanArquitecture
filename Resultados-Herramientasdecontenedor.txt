@@ -1,0 +1,16 @@
+﻿========== Comprobando los requisitos previos del contenedor ==========
+Comprobando que Docker Desktop está instalado...
+Docker Desktop está instalado.
+========== Comprobando que Docker Desktop se está ejecutando... ==========
+Comprobando que Docker Desktop se está ejecutando...
+Docker Desktop se está ejecutando.
+========== Verificando el sistema operativo de Docker ==========
+Comprobando que el modo del sistema operativo de Docker Desktop coincida con el sistema operativo de destino del proyecto...
+El modo de sistema operativo de Docker Desktop coincide con el sistema operativo de destino del proyecto.
+========== Extrayendo las imágenes necesarias ==========
+Comprobando si faltan imágenes de Docker...
+Se está aplicando "pull" para extraer las imágenes de Docker. Para cancelar esta descarga, cierre la ventana del símbolo del sistema.
+docker pull mcr.microsoft.com/dotnet/aspnet:3.1
+Las imágenes de Docker están listas.
+========== Finalizada ==========
+

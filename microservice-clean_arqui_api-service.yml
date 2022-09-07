@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+	name: microservice-clean_arqui_api-service
+	labels:
+		name: microservice-clean_arqui_service
+		app: microservice
+spec:
+	type: LoadBalancer
+	ports:
+		- port: 80
+		  targetPort: 80
+		  nodePort: 30008
+	selector:
+		app: microservice-clean_arqui_api
+		type: microservice

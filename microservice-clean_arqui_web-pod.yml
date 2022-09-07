@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+	name: microservice-clean_arqui_web-pod
+	labels:
+		app: microservice-clean_arqui_web
+		type: microservice
+spec:
+	containers:
+		- name: microservice-clean_arqui_web-app
+		  image: danyfloresgarcia18/cleanarquiweb:latest
+		  ports:
+			- containerPort: 80
