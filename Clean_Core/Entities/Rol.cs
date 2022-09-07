@@ -8,5 +8,6 @@ namespace Clean_Arqui.Core.Entities
         public string nombre { get; set; }
         public DateTime fechaCreacion { get; set; }
         public Usuario usuarioCreador { get; set; }
+        public bool Activo { get; set; }
     }
 }
